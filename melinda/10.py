@@ -1,0 +1,35 @@
+import turtle as t
+
+t.ht()
+t.speed(0)
+t.fillcolor('red')
+t.begin_fill()
+t.fd(230)
+t.lt(90)
+t.fd(150)
+t.lt(90)
+t.fd(230)
+t.lt(90)
+t.fd(150)
+t.end_fill()
+
+def star(x, y, z):
+    t.pu()
+    t.goto(x, y)
+    t.pd()
+    t.pencolor('yellow')
+    t.fillcolor('yellow')
+    t.begin_fill()
+    t.rt(18)
+    for i in range(5):
+        t.fd(z)
+        t.lt(144)
+    t.end_fill()
+    t.lt(18)
+
+star(30, 130, 40)
+star(60, 140, 15)
+star(80, 120, 15)
+star(80, 100, 15)
+star(60, 80, 15)
+t.done()
